@@ -1,0 +1,9 @@
+<div>
+
+    <input type="text" ng-repeat="browser in browsers" ng-model="browser.share"/>
+
+    <piechart radius="150">
+        <piechart-slice ng-repeat="browser in browsers" value="{{browser.share}}" fill="{{browser.color}}"></piechart-slice>
+    </piechart>
+
+</div>
